@@ -15,7 +15,7 @@
 body {
     background-color: #fff9fc;
     color: #4a4a4a;
-    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffd1e8' fill-opacity='0.2' fill-rule='evenodd'/%3E%3C/svg%3E");
+    /* Removed the background-image that was creating the random circular elements */
 }
 
 /* Remover as partículas sparkle que não são mais necessárias */
@@ -27,7 +27,7 @@ body {
 .header {
     position: relative;
     width: 100%;
-    padding: 25px 20px; /* Reduzido de 40px para 25px */
+    padding: 20px 20px 15px; /* Reduzido o padding, especialmente na parte inferior */
     background: linear-gradient(135deg, #ffd1dc 0%, #ffb6c1 100%);
     border-bottom: 3px solid #ffb6c1;
     text-align: center;
@@ -63,7 +63,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px; /* Reduzido de 30px para 20px */
+    padding: 15px 20px 5px; /* Reduzido o padding, especialmente na parte inferior */
     background-color: transparent;
     border-radius: 20px;
     max-width: 500px;
@@ -130,7 +130,7 @@ body {
 .store-name {
     font-size: 34px;
     font-weight: 300;
-    margin-bottom: 12px;
+    margin-bottom: 6px; /* Reduzido o espaço na parte inferior */
     color: white; /* Cor branca */
     text-transform: uppercase;
     letter-spacing: 6px;
@@ -142,7 +142,7 @@ body {
     font-size: 17px;
     font-weight: 300;
     color: white; /* Cor branca */
-    margin-bottom: 5px;
+    margin-bottom: 0; /* Removido o espaço na parte inferior */
     padding: 0 10px;
     font-family: 'Jost', sans-serif;
     font-style: normal;
@@ -418,6 +418,8 @@ body {
     background-color: #25D366;
     color: white;
     border-radius: 50%;
+    height: 50px;
+    width: 50px;
 }
 
 .social-icon.tiktok {
